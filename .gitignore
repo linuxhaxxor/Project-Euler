@@ -1,0 +1,33 @@
+# JavaScript
+#############
+
+.npm-debug.log
+node_modules
+
+
+# Python
+#########
+
+__pycache__/
+*.py[cod]
+
+
+# Editors
+##########
+
+*.sw[po]
+*.sublime-workspace
+
+
+# OS generated files
+######################
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
