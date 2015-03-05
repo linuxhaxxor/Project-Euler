@@ -5,13 +5,13 @@ with programming. As an aspiring polyglot, I want to use these as exercises to
 practice different languages and their standard libraries.
 
 #### Languages I Plan to Work With
-- JavaScript
-- CoffeeScript
-- Haskell
-- Elixir
+- JavaScript (ECMAScript 6)
+- CoffeeScript (v1.9)
+- Haskell (ghc v7.6)
+- Elixir (v1.1)
 - Erlang
-- Python
-- Lua
+- Python (v3)
+- Lua (5.2)
 
 #### Languages I Might Consider (Some May Have Some Technical Difficulties)
 - Elm
