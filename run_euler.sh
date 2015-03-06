@@ -59,7 +59,7 @@ fi
 JS_FILE="$PROBLEM_DIR/js/main.js"
 if [ -f $EXS_FILE ] && type 'node' &> /dev/null; then
 	echo -e "$GREEN-- JavaScript$RST"
-	node $JS_FILE
+	babel-node $JS_FILE
 	echo
 fi
 

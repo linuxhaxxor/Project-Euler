@@ -10,5 +10,8 @@ isDivisBy = (x, y) -> x % y == 0
 # isDivisBy3or5 :: Int -> Bool
 isDivisBy3or5 = (x) -> (isDivisBy(x, 3) or isDivisBy(x, 5))
 
-console.log sum([0..999].filter(isDivisBy3or5))
+# sumIntsDivisBy3or5To :: Int -> Int
+sumIntsDivisBy3or5To = (x) -> sum([1..x].filter(isDivisBy3or5))
+
+console.log sumIntsDivisBy3or5To(999)
 
