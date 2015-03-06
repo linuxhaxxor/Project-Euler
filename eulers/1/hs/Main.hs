@@ -8,5 +8,5 @@ isDivisBy3or5 :: Int -> Bool
 isDivisBy3or5 x = (isDivisBy x 3) || (isDivisBy x 5)
 
 sumIntsDivisBy3or5 :: [Int] -> Int
-sumIntsDivisBy3or5 xs = sum $ filter divisBy3or5 xs
+sumIntsDivisBy3or5 xs = sum $ filter isDivisBy3or5 xs
 
