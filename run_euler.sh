@@ -63,6 +63,13 @@ if [ -f $EXS_FILE ] && type 'node' &> /dev/null; then
 	echo
 fi
 
+LUA_FILE="$PROBLEM_DIR/lua/main.lua"
+if [ -f $LUA_FILE ] && type 'luajit' &> /dev/null; then
+	echo -e "$GREEN-- Lua$RST"
+	luajit $LUA_FILE
+	echo
+fi
+
 PHP_FILE="$PROBLEM_DIR/php/main.php"
 if [ -f $PHP_FILE ] && type 'php5' &> /dev/null; then
 	echo -e "$GREEN-- PHP$RST"
@@ -76,3 +83,4 @@ if [ -f $PY_FILE ] && type 'python3' &> /dev/null; then
 	python $PY_FILE
 	echo
 fi
+

@@ -14,7 +14,7 @@ of friction.
 - Elixir (v1.1)
 - Erlang
 - Python (v3, favoring list comprehensions)
-- Lua (5.2)
+- Lua (v5.2, LuaJIT)
 
 
 #### Languages I Might Consider (Some May Have Some Technical Difficulties)
