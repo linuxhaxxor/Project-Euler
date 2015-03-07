@@ -64,8 +64,17 @@ if [ -f $HS_FILE ] && type 'runghc' &> /dev/null; then
 	echo
 fi
 
+JL_FILE="$PROBLEM_DIR/jl/main.jl"
+if [ -f $JL_FILE ] && type 'julia' &> /dev/null; then
+	START=$(date +%s.%N)
+	julia $JL_FILE
+	END=$(date +%s.%N)
+	echo -e "$GREEN\`- Julia$RST         : $(echo "$END - $START" | bc)"
+	echo
+fi
+
 JS_FILE="$PROBLEM_DIR/js/main.js"
-if [ -f $EXS_FILE ] && type 'babel-node' &> /dev/null; then
+if [ -f $JS_FILE ] && type 'babel-node' &> /dev/null; then
 	START=$(date +%s.%N)
 	babel-node $JS_FILE
 	END=$(date +%s.%N)
