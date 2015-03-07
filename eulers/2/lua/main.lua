@@ -7,7 +7,6 @@ function sum_fibs_while_lt(max)
 		local tmp = curr
 		curr = prev + curr
 		prev = tmp
-		print(prev .. ' ' .. curr)
 		if (curr % 2 == 0) then
 			sum = sum + curr
 		end
