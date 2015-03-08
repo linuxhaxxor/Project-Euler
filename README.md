@@ -12,7 +12,7 @@ of friction.
 - [JavaScript](http://www.ecmascript.org/) (ECMAScript 6, favoring new
   syntax and features)
 - [CoffeeScript](http://coffeescript.org/) (v1.9, favoring functional
-  programming)
+  programming/recursion)
 - [Haskell](https://www.haskell.org/) (ghc v7.6)
 - [Elixir](http://elixir-lang.org/) (v1.1)
 - [Erlang](http://www.erlang.org/)
