@@ -1,4 +1,5 @@
 let limitedFib = function*(limit) {
+  yield 0
   yield 1
   yield 1
   let prev = 1
@@ -12,8 +13,8 @@ let limitedFib = function*(limit) {
 
 let fibsTo = (limit) => {
   let fibonacci = limitedFib(limit)
-  let fibseq = []
-  let currFib
+  let currFib = fibonacci.next().value
+  let fibseq = [currFib]
 
   while(currFib = fibonacci.next().value)
     fibseq.push(currFib)
