@@ -1,5 +1,5 @@
 main :: IO ()
-main = print . sumEvenFibsTo $ 4000000
+main = print $ sumEvenFibsTo 4000000
 
 -- Memoization @ https://wiki.haskell.org/Memoization
 memoizedFib :: Int -> Int

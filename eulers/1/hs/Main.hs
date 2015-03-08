@@ -1,5 +1,5 @@
 main :: IO ()
-main = putStrLn . show . sumIntsDivisBy3or5To $ 999
+main = print $ sumIntsDivisBy3or5To 999
 
 isDivisBy :: Int -> Int -> Bool
 isDivisBy x y = mod x y == 0
