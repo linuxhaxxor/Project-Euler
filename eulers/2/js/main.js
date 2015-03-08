@@ -1,4 +1,4 @@
-let limitedFib = function*(limit) {
+let fib = function*() {
   yield 0
   yield 1
   yield 1
@@ -6,17 +6,16 @@ let limitedFib = function*(limit) {
   let curr = 1
   while (true) {
     [prev, curr] = [curr, prev + curr]
-    if (curr > limit) return
     yield curr
   }
 }
 
 let fibsTo = (limit) => {
-  let fibonacci = limitedFib(limit)
+  let fibonacci = fib()
   let currFib = fibonacci.next().value
   let fibseq = [currFib]
 
-  while(currFib = fibonacci.next().value)
+  while (limit > (currFib = fibonacci.next().value))
     fibseq.push(currFib)
 
   return fibseq
