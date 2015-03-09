@@ -1,6 +1,5 @@
 # memoizedFid :: Int -> Int
-memoizedFib = ((memo) ->
-	memo = memo or {}
+memoizedFib = ((memo={}) ->
 	(x) ->
 		if memo[x] then memo[x]
 		else memo[x] =
