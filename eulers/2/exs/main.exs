@@ -12,7 +12,7 @@ defmodule Fibonacci do
 		Stream.unfold({0, 1}, fn {x, y} -> {x, {y, x+y}} end)
 	end
 
-	def sumEvenFibsTo(x) do
+	def sum_even_fibs_to(x) do
 		fib2
 		|> Stream.take_while(fn y -> y < x end)
 		|> Stream.filter(fn y -> rem(y, 2) === 0 end)
@@ -20,5 +20,5 @@ defmodule Fibonacci do
 	end
 end
 
-Fibonacci.sumEvenFibsTo(4000000) |> IO.puts
+4000000 |> Fibonacci.sum_even_fibs_to |> IO.puts
 
