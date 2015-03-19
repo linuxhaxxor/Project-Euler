@@ -1,5 +1,4 @@
 let fib = function*() {
-  yield 0
   yield 1
   yield 1
   let prev = 1

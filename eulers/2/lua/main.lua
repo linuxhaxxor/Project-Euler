@@ -1,6 +1,6 @@
 function sum_fibs_while_lt(max)
 	local sum = 0
-	local prev = 0
+	local prev = 1
 	local curr = 1
 
 	while (curr < max) do

@@ -10,4 +10,4 @@ memoizedFib = (map fib [0..] !!)
         fib x = memoizedFib (x-1) + memoizedFib (x-2)
 
 sumEvenFibsTo :: Int -> Int
-sumEvenFibsTo x = sum . filter even . takeWhile (<x) $ map memoizedFib [0..]
+sumEvenFibsTo x = sum . filter even . takeWhile (<x) $ map memoizedFib [1..]

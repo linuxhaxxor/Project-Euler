@@ -15,7 +15,7 @@ add = (x, y) -> x + y
 sum = (xs) -> xs.reduce add, 0
 
 # fibsTo :: Int -> [Int] -> [Int]
-fibsTo = (x, xs=[0]) ->
+fibsTo = (x, xs=[1]) ->
 	if xs[xs.length - 1] > x then xs
 	else
 		xs[xs.length] = memoizedFib xs.length
