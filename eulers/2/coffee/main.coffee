@@ -3,9 +3,10 @@ memoizedFib = ((memo={}) ->
 	(x) ->
 		if memo[x] then memo[x]
 		else memo[x] =
-			if x == 0 then 0
-			else if x == 1 then 1
-			else memoizedFib(x-2) + memoizedFib(x-1)
+			switch x
+				when 0 then 0
+				when 1 then 1
+				else memoizedFib(x-2) + memoizedFib(x-1)
 )()
 
 # add :: Int -> Int -> Int
@@ -15,7 +16,7 @@ add = (x, y) -> x + y
 sum = (xs) -> xs.reduce add, 0
 
 # fibsTo :: Int -> [Int] -> [Int]
-fibsTo = (x, xs=[1]) ->
+fibsTo = (x, xs=[0]) ->
 	if xs[xs.length - 1] > x then xs
 	else
 		xs[xs.length] = memoizedFib xs.length
