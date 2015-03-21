@@ -1,6 +1,6 @@
 #!/usr/bin/env escript
 -module(euler2).
--export([fib/1, fibs_to/1]).
+-export([main/1, sum_even_fibs_to/1]).
 
 
 % Fibonacci via pattern matching, arity, & tail call recursion
