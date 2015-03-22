@@ -1,10 +1,11 @@
 #!/usr/bin/env escript
+
 -module(euler3).
 -export([main/1, largest_prime_factor/1]).
 
 
 main(_) ->
-    io:format("~p~n", [factors(600851475143)]).
+    io:format("~p~n", [largest_prime_factor(600851475143)]).
 
 factors(X) when X > 1 ->
     [1] ++ [F || F <- lists:seq(2, trunc(X/2)), X rem F =:= 0] ++ [X].
