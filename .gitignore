@@ -1,3 +1,34 @@
+# Elixir
+########
+
+/_build
+/deps
+*.ez
+
+
+# Erlang
+# ######
+
+erl_crash.dump
+.eunit
+*.beam
+*.plt
+ebin
+.rebar
+
+
+# Haskell
+#########
+
+*.hi
+*.chi
+.virtualenv
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+
+
 # JavaScript
 #############
 
@@ -18,6 +49,11 @@ __pycache__/
 *.sw[po]
 *.sublime-workspace
 
+
+# Misc
+######
+
+*.o
 
 # OS generated files
 ######################
