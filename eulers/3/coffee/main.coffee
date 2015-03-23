@@ -26,7 +26,8 @@ isDivisBy = (x, y) ->
 # factors : Int -> [Int]
 factors = (x) ->
 	factorFilter = (y) -> isDivisBy x, y
-	Array::concat [1], filter factorFilter, [2..(Math.floor x * 0.5)], [x]
+	midFactors = (f for f in [2..(Math.floor x * 0.5)] when factorFilter f)
+	Array::concat [1], midFactors, [x]
 
 
 # isPrime : Int -> Bool
