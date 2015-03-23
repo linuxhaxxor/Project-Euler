@@ -21,6 +21,9 @@ is_prime(X, R) -> is_prime(X, R+2).
 
 prime_factors(X) -> lists:filter(fun (Y) -> is_prime(Y) end, factors(X)).
 
-largest_prime_factor(X) when is_prime(X) -> X;
-largest_prime_factor(X) -> lists:last(lists:sort(prime_factors(X))).
+largest_prime_factor(X) ->
+    case is_prime(X) of
+        true -> X;
+        false -> lists:last(lists:sort(prime_factors(X)))
+    end.
 
