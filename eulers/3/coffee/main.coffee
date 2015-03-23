@@ -48,5 +48,5 @@ largestPrimeFactor = (x) ->
 	last filter isPrime, factors(x)
 
 
-console.log largestPrimeFactor 600851475143 #13195
+console.log largestPrimeFactor 13195
 

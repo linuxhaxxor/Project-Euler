@@ -5,7 +5,7 @@
 
 
 main(_) ->
-    io:format("~p~n", [largest_prime_factor(600851475143)]).
+    io:format("~p~n", [largest_prime_factor(13195)]).
 
 factors(X) when X > 1 ->
     [1] ++ [F || F <- lists:seq(2, trunc(X/2)), X rem F =:= 0] ++ [X].
@@ -21,5 +21,6 @@ is_prime(X, R) -> is_prime(X, R+2).
 
 prime_factors(X) -> lists:filter(fun (Y) -> is_prime(Y) end, factors(X)).
 
+largest_prime_factor(X) when is_prime(X) -> X;
 largest_prime_factor(X) -> lists:last(lists:sort(prime_factors(X))).
 
