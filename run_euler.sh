@@ -28,6 +28,15 @@ if [ -f $PROBLEM_FILE ]; then
 	echo
 fi
 
+CLJ_FILE="$PROBLEM_DIR/clj/main.clj"
+if [ -f $CLJ_FILE ] && type 'clojure' &> /dev/null; then
+	START=$(date +%s.%N)
+	clojure $CLJ_FILE
+	END=$(date +%s.%N)
+	echo -e "$GREEN\`- Clojure$RST       : $(echo "$END - $START" | bc)"
+	echo
+fi
+
 COFFEE_FILE="$PROBLEM_DIR/coffee/main.coffee"
 if [ -f $COFFEE_FILE ] && type 'coffee' &> /dev/null; then
 	START=$(date +%s.%N)
