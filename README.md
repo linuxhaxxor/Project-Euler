@@ -15,6 +15,7 @@ than always picking the most efficient or performant option.
   syntax and features)
 - [CoffeeScript](http://coffeescript.org/) (v1.9, favoring functional
   programming/recursion)
+- [Clojure](http://clojure.org/) (v1.6)
 - [Haskell](https://www.haskell.org/) (ghc v7.6)
 - [Elixir](http://elixir-lang.org/) (v1.1)
 - [Erlang](http://www.erlang.org/) (v6.1)
@@ -26,8 +27,6 @@ than always picking the most efficient or performant option.
 
 - [Elm](http://elm-lang.org/) (Not sure how you'd use like a scripting
   language without it being a pain)
-- [Clojure](http://clojure.org/) (LISP-y language would be cool, but
-  I don't want to deal with the JVM, but there's still Racket...)
 - [PHP](http://php.net/) (I use it for my job so it's relevant, but it's not i
   any fun to code in and the syntax is ugly)
 - [Julia](http://julialang.org/) (It works with numbers pretty well and
